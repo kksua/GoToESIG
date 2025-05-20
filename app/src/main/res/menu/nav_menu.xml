@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/me"
+            android:title="Mon Profil" />
+        <item
+            android:id="@+id/nav_add_trip"
+            android:icon="@drawable/ajouterxml"
+            android:title="Ajouter un trajet" />
+        <item
+            android:id="@+id/nav_my_trips"
+            android:icon="@drawable/car"
+            android:title="Mes trajets" />
+        <item
+            android:id="@+id/nav_chercher_trajet"
+            android:icon="@drawable/cherchertrajet"
+            android:title="Chercher un trajet" />
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/stats"
+            android:title="Statistiques" />
+    </group>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Quitter " />
+        </menu>
+    </item>
+</menu>

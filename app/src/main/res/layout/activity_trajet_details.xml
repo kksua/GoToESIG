@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back"
+        android:contentDescription="Back Button"
+        android:layout_gravity="top|start" />
+
+    <!-- Map View -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Info Container (above the button) -->
+    <LinearLayout
+        android:id="@+id/infoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="72dp"
+    android:background="#AAFFFFFF"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_gravity="bottom">
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Distance: -- km"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/durationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durée: -- min"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+</LinearLayout>
+
+    <!-- Select Trip Button -->
+<!--<Button-->
+<!--android:id="@+id/button_select_trip"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginStart="16dp"-->
+<!--android:layout_marginEnd="16dp"-->
+<!--android:layout_marginBottom="16dp"-->
+<!--android:layout_gravity="bottom"-->
+<!--android:background="@color/black"-->
+<!--android:text="Sélectionner ce trajet"-->
+<!--android:textColor="@color/white" />-->
+    <android.widget.Button
+        android:id="@+id/button_select_trip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="bottom"
+        android:background="#000000"
+        android:paddingHorizontal="16dp"
+        android:text="Sélectionner ce trajet"
+        android:textColor="#FFFFFF" />
+    </FrameLayout>
